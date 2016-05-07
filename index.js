@@ -30,8 +30,6 @@
 
 	module.exports = ParallelIterable;
 
-	ParallelIterable.createXIterableClass.Root = createClassFromSuper(Root);
-
 	function build(self, stop, ...iterables) {
 		self.stop = stop;
 		self.iterables = iterables;
