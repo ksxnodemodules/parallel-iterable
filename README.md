@@ -38,9 +38,10 @@ var iterables = [
     'jklmnopqrs',
     'tuvwxyz'
 ];
-var eofirst = [...new ParallelIterable(ParallelIterable.END_OF_FIRST, ...iterables)];
-var eosome = [...new ParallelIterable(ParallelIterable.END_OF_SOME, ...iterables)];
-var eoall = [...new ParallelIterable(ParallelIterable.END_OF_ALL, ...iterables)];
-var firstfive = [...new ParallelIterable(ParallelIterable.FOR_COUNT(5), ...iterables)];
+var {END_OF_FIRST, END_OF_SOME, END_OF_ALL, FOR_COUNT} = ParallelIterable;
+var eofirst = [...new ParallelIterable(END_OF_FIRST, ...iterables)];
+var eosome = [...new ParallelIterable(END_OF_SOME, ...iterables)];
+var eoall = [...new ParallelIterable(END_OF_ALL, ...iterables)];
+var firstfive = [...new ParallelIterable(FOR_COUNT(5), ...iterables)];
 console.log({eofirst, eosome, eoall});
 ```
