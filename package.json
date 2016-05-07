@@ -1,7 +1,7 @@
 
 {
 	"name": "parallel-iterable",
-	"description": "Traverse several iterables at the same times",
+	"description": "Traverse several iterables at the same time",
 	"version": "0.0.0",
 	"author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
 	"contributors": [
