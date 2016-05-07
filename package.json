@@ -1,0 +1,32 @@
+
+{
+	"name": "parallel-iterable",
+	"description": "Traverse several iterables at the same times",
+	"version": "0.0.0",
+	"author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+	"contributors": [
+		"Hoàng Văn Khải <hvksmr1996@gmail.com>"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ksxnodemodules/parallel-iterable.git"
+	},
+	"engines": {
+		"node": ">= 6.0.0"
+	},
+	"dependencies": {
+		"x-iterable-utils": "ksxnodemodules/x-iterable-utils#v0.0.0",
+		"x-iterable-base": ">=1.0.2 <2.0.0",
+		"simple-class-utils": ">=0.0.4 <2.0.0"
+	},
+	"main": "index.js",
+	"keywords": [
+		"parallel-iterable",
+		"parallel-iterator"
+	],
+	"bugs": {
+		"url": "https://github.com/ksxnodemodules/parallel-iterable/issues"
+	},
+	"homepage": "https://github.com/ksxnodemodules/parallel-iterable#readme"
+}
