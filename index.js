@@ -2,7 +2,6 @@
 ((module) => {
 	'use strict';
 
-	var createClassFromSuper = require('simple-class-utils').createClass.super;
 	var {XIterable} = require('x-iterable-base');
 	var ParallelIterableSuper = require('x-iterable-utils/appx-super-class.js')(build, iterate);
 
