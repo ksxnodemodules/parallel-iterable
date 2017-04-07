@@ -2,7 +2,6 @@
 ((module) => {
   'use strict'
 
-  var {XIterable} = require('x-iterable-base')
   var ParallelIterableSuper = require('x-iterable-utils/appx-super-class.js')(build, iterate)
 
   var _key_iterator = Symbol.iterator
