@@ -32,9 +32,7 @@ function * iterate () {
   const iterators = this.iterables.map(iterable => iterable[iterator]())
   for (; ;) {
     const elements = iterators.map(iterator => iterator.next())
-    if (this.stop(elements, this)) {
-      break
-    }
+    if (this.stop(elements, this)) break
     yield elements.map(({value}) => value)
   }
 }
