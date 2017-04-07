@@ -34,8 +34,7 @@ function * iterate () {
     const elements = iterators.map(iterator => iterator.next())
     if (this.stop(elements, this)) {
       break
-    } else {
-      yield elements.map(({value}) => value)
     }
+    yield elements.map(({value}) => value)
   }
 }
