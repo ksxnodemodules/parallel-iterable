@@ -4,7 +4,7 @@
 
   var ParallelIterableSuper = require('x-iterable-utils/appx-super-class.js')(build, iterate)
 
-  var iterable = Symbol.iterator
+  var {iterable} = Symbol
 
   class ParallelIterable extends ParallelIterableSuper {
     static END_OF_FIRST ([{done}]) {
