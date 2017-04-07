@@ -29,9 +29,9 @@ function build (self, stop, ...iterables) {
 }
 
 function * iterate () {
-  const iterators = this.iterables.map((iterable) => iterable[iterable]())
+  const iterators = this.iterables.map(iterable => iterable[iterable]())
   for (; ;) {
-    const elements = iterators.map((iterator) => iterator.next())
+    const elements = iterators.map(iterator => iterator.next())
     if (this.stop(elements, this)) {
       break
     } else {
