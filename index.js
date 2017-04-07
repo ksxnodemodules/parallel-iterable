@@ -3,7 +3,6 @@
   'use strict'
 
   var ParallelIterableSuper = require('x-iterable-utils/appx-super-class.js')(build, iterate)
-
   var {iterable} = Symbol
 
   class ParallelIterable extends ParallelIterableSuper {
