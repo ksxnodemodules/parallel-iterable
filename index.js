@@ -1,7 +1,7 @@
 'use strict'
 
 const ParallelIterableSuper = require('x-iterable-utils/appx-super-class.js')(build, iterate)
-const {iterable} = Symbol
+const {iterator} = Symbol
 
 class ParallelIterable extends ParallelIterableSuper {
   static END_OF_FIRST ([{done}]) {
@@ -29,7 +29,7 @@ function build (self, stop, ...iterables) {
 }
 
 function * iterate () {
-  const iterators = this.iterables.map(iterable => iterable[iterable]())
+  const iterators = this.iterables.map(iterable => iterable[iterator]())
   for (; ;) {
     const elements = iterators.map(iterator => iterator.next())
     if (this.stop(elements, this)) {
